@@ -1,0 +1,14 @@
+1. Imports the required libraries: pandas, MinMaxScaler, KMeans, and plotly.graph_objects. 
+2. Reads the data from a CSV file located at "C:\Users\pumpk\Desktop\Nathan's File\DOCUMENTS\My Notes\Projects\KMeans.csv" into a pandas DataFrame. 
+3. Drops any rows with missing values from the DataFrame. 
+4. Selects the columns "BALANCE", "PURCHASES", and "CREDIT_LIMIT" from the DataFrame as the data for clustering. 
+5. Applies the MinMaxScaler to each column in the clustering data. 
+6. Initializes a KMeans object with 5 clusters. 
+7. Performs K-means clustering on the scaled data. 
+8. Adds a new column "CREDIT_CARD_SEGMENTS" to the DataFrame to store the cluster labels. 
+9. Maps the cluster labels to descriptive names for better readability. 
+10. Initializes a plotly Figure object. 
+11. Iterates over the unique cluster labels and adds a 3D scatter plot for each cluster to the Figure. 
+12. Updates the hover template for the plot to display the values of BALANCE, PURCHASES, and CREDIT_LIMIT. 
+13. Updates the layout of the plot, including the axis titles and font settings. 
+14. The resulting plot can be displayed or saved using further code. 
