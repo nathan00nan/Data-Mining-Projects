@@ -1,0 +1,17 @@
+1. Imports the required libraries: pandas, numpy, CountVectorizer, train_test_split, GridSearchCV, BernoulliNB, precision_score, recall_score, f1_score, and confusion_matrix. 
+2. Reads the data from a CSV file located at "C:\Users\pumpk\Desktop\Nathan's File\DOCUMENTS\My Notes\Projects\BernoulliNB.csv" into a pandas DataFrame. 
+3. Selects only the "CONTENT" and "CLASS" columns from the DataFrame. 
+4. Maps the values in the "CLASS" column from 0 and 1 to "Not Spam" and "Spam Comment" respectively. 
+5. Converts the "CONTENT" and "CLASS" columns into numpy arrays. 
+6. Initializes a CountVectorizer object for text feature extraction. 
+7. Transforms the "CONTENT" column into a sparse matrix of token counts using the CountVectorizer. 
+8. Splits the data into training and testing sets using train_test_split, with a test size of 0.2 and a random state of 42. 
+9. Defines a parameter grid for hyperparameter tuning of the BernoulliNB model. 
+10. Initializes a BernoulliNB model. 
+11. Performs a grid search with 5-fold cross-validation to find the best hyperparameters using GridSearchCV. 
+12. Retrieves the best model and best parameters from the grid search. 
+13. Evaluates the accuracy of the best model on the test set. 
+14. Makes predictions on the test set using the best model. 
+15. Calculates precision, recall, and F1 score for the predictions. 
+16. Computes the confusion matrix for the predictions. 
+17. Prints the accuracy, precision, recall, F1 score, confusion matrix, and best hyperparameters. 
