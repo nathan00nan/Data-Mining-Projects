@@ -1,0 +1,17 @@
+1. Imports the required libraries: pandas, KNeighborsClassifier, train_test_split, GridSearchCV, accuracy_score, and numpy. 
+2. Reads the data from a CSV file located at "C:\Users\pumpk\Desktop\Nathan's File\DOCUMENTS\My Notes\Projects\KNN.csv" into a pandas DataFrame called "iris". 
+3. Prints the unique target labels in the "species" column of the iris DataFrame. 
+4. Separates the features (x) and target (y) variables from the iris DataFrame. 
+5. Splits the data into training and testing sets using train_test_split, with a test size of 0.2 and a random state of 0. 
+6. Defines a parameter grid for hyperparameter tuning of the KNeighborsClassifier model. 
+7. Initializes a KNeighborsClassifier model. 
+8. Performs a grid search with 5-fold cross-validation to find the best hyperparameters using GridSearchCV. 
+9. Retrieves the best parameters and best score from the grid search. 
+10. Initializes a new KNeighborsClassifier model with the best parameters. 
+11. Fits the new model to the training data. 
+12. Creates a new data point (x_new) for prediction. 
+13. Makes a prediction on the new data point using the best model. 
+14. Prints the prediction. 
+15. Makes predictions on the test set using the best model. 
+16. Calculates the accuracy of the predictions compared to the true labels. 
+17. Prints the accuracy. 
