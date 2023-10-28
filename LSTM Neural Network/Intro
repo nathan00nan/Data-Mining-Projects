@@ -1,0 +1,14 @@
+1. Imports the required libraries: pandas, numpy, train_test_split, Sequential, Dense, and LSTM from Keras. 
+2. Reads the data from a CSV file located at "C:\Users\pumpk\Desktop\Nathan's File\DOCUMENTS\My Notes\Projects\LSTM Neural Network.csv" into a pandas DataFrame called "data". 
+3. Defines the radius of the Earth (R) and helper functions "deg_to_rad" and "distcalculate" for distance calculation. 
+4. Adds a new column "distance" to the DataFrame and calculates the distance between the restaurant and delivery location using the "distcalculate" function. 
+5. Prepares the features (x) and target (y) variables from the DataFrame. 
+6. Splits the data into training and testing sets using train_test_split, with a test size of 0.10 and a random state of 42. 
+7. Initializes a Sequential model. 
+8. Adds two LSTM layers with 128 and 64 units respectively, followed by Dense layers with 25 and 1 unit. 
+9. Prints a summary of the model's architecture. 
+10. Compiles the model with the Adam optimizer and mean squared error loss function. 
+11. Trains the model on the training data for 9 epochs with a batch size of 1. 
+12. Asks for user input to provide the age, ratings, and total distance for predicting the delivery time. 
+13. Creates a feature array from the user input and predicts the delivery time using the trained model. 
+14. Prints the predicted delivery time. 
