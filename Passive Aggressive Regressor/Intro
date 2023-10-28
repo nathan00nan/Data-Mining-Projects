@@ -1,0 +1,17 @@
+1. Imports the required libraries: pandas, numpy, train_test_split, PassiveAggressiveRegressor, mean_squared_error, mean_absolute_error, and r2_score. 
+2. Reads the data from a CSV file located at "C:\Users\pumpk\Desktop\Nathan's File\DOCUMENTS\My Notes\Projects\Passive Aggressive Regressor.csv" into a pandas DataFrame called "data". The encoding is set to 'latin1'. 
+3. Drops any rows with missing values from the DataFrame. 
+4. Separates the features (x) and target (y) variables from the DataFrame. 
+5. Splits the data into training and testing sets using train_test_split, with a test size of 0.2 and a random state of 42. 
+6. Initializes a PassiveAggressiveRegressor model. 
+7. Fits the model to the training data. 
+8. Makes predictions on the test set. 
+9. Calculates the mean squared error (MSE) between the predicted and actual values. 
+10. Prints the MSE. 
+11. Calculates the mean absolute error (MAE) between the predicted and actual values. 
+12. Prints the MAE. 
+13. Calculates the R-squared (R2) score between the predicted and actual values. 
+14. Prints the R2 score. 
+15. Creates a new feature array for prediction. 
+16. Predicts the impressions using the trained model and the new features. 
+17. Prints the predicted impressions. 
