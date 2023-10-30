@@ -1,0 +1,18 @@
+1. The necessary libraries are imported: pandas for data handling, numpy for numerical computations, train_test_split for data splitting, SVC for SVM classification, StandardScaler for feature scaling, accuracy_score for evaluating the model's performance, and GridSearchCV for hyperparameter optimization.
+2. The dataset is loaded using the read_csv function from pandas. The dataset file path is provided as an argument.
+3. The dataset is preprocessed by dropping any rows with missing values and converting categorical variables to numerical using mapping. For example, "Tumour_Stage" and "Histology" columns are mapped to numerical values.
+4. The feature matrix X and the target variable y are extracted from the dataset.
+5. The dataset is split into training and testing sets using the train_test_split function. The X and y matrices are split with 10% of the data reserved for testing, and a random state of 42 is set for reproducibility.
+6. The feature values in the training and testing sets are standardized using the StandardScaler. This is done to ensure that all features have the same scale, which is important for many machine learning algorithms.
+7. An SVM classifier object is created without specifying any hyperparameters.
+8. A param_grid dictionary is created with different values for hyperparameters C, kernel, and gamma. The different values are specified for grid search optimization.
+9. A GridSearchCV object is created, specifying the SVM classifier, param_grid, scoring metric (accuracy in this case), and 5-fold cross-validation.
+10. The GridSearchCV object is fitted on the training data using the fit method. This performs the grid search and cross-validation to find the best hyperparameters.
+11. The best_params attribute of the grid_search object is accessed to get the best hyperparameters found during the grid search.
+12. The best_estimator attribute of the grid_search object is accessed to get the best SVM classifier model that was trained on the entire training set with the best hyperparameters.
+13. The best_estimator model is used to make predictions on the testing set.
+14. The accuracy of the model predictions is calculated using the accuracy_score function.
+15. A new set of features is created as a numpy array.
+16. The new features are scaled using the same scaler that was fit on the training data.
+17. The best_estimator model is used to make predictions on the scaled new features.
+18. The predictions for the new features are printed.
