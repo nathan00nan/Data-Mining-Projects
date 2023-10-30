@@ -1,0 +1,8 @@
+1. Read the data from a CSV file and convert the date column to a datetime format.
+2. Rename the columns to match the required input format for Prophet.
+3. Create an instance of the Prophet class and set the desired parameters, including holidays, seasonality, and priors.
+4. Fit the model to the data.
+5. Specify the number of forecast periods and generate future dates for prediction.
+6. Use the trained model to make predictions on the future dates.
+7. Calculate evaluation metrics, including Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Percentage Error (MAPE).
+8. Plot the predicted values against the actual values using Plotly.
