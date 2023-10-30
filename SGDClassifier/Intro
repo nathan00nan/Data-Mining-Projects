@@ -1,0 +1,23 @@
+1. The code imports the necessary libraries - pandas, numpy, CountVectorizer from scikit-learn, train_test_split from scikit-learn's model_selection module, SGDClassifier from scikit-learn's linear_model module, and the relevant modules from nltk (Natural Language Toolkit).
+2. The dataset is read using the pandas `read_csv()` function and stored in the variable `data`. The file path in the code should be updated to the correct path on your system.
+3. The `isnull()` function is called on the data to check for any missing values. The `sum()` function is then called to get the sum of missing values for each column. However, the results of this check are not used in the code.
+4. Any rows with missing values are dropped using the `dropna()` function.
+5. The NLTK stopwords are downloaded using the `nltk.download()` function to remove common words that do not have much impact on the classification task.
+6. A Snowball stemmer is initialized to perform stemming on the words. Stemming reduces words to their root form.
+7. The `clean()` function is defined to preprocess the text data. It performs several cleaning steps such as converting text to lowercase, removing URLs, HTML tags, punctuation, numbers, and stopwords. It also performs stemming on the words. The function takes a text as input and returns the cleaned text.
+8. The `clean()` function is applied to the "Consumer complaint narrative" column of the data using the `apply()` method of pandas dataframe.
+9. The data is then filtered to keep only the "Consumer complaint narrative" and "Product" columns.
+10. The "Consumer complaint narrative" and "Product" columns are converted to NumPy arrays and stored in variables `x` and `y`, respectively.
+11. The data is again filtered to keep only the "Consumer complaint narrative" and "Product" columns.
+12. The "Consumer complaint narrative" column is converted to a NumPy array and stored in the variable `x`.
+13. The "Product" column is converted to a NumPy array and stored in the variable `y`.
+14. The `CountVectorizer()` function is initialized to convert the text data into numerical features. It creates a vocabulary of words and counts the occurrences of each word in a text.
+15. The `fit_transform()` method of the CountVectorizer is called on `x` to create the feature matrix `X`.
+16. The `train_test_split()` function is used to split the data into training and testing sets. `X_train` and `X_test` hold the feature matrices for the training and testing sets, respectively. `y_train` and `y_test` hold the corresponding target values.
+17. An SGDClassifier model is initialized.
+18. The `fit()` method of the SGDClassifier model is called on the training data to train the model.
+19. The user is prompted to enter a text.
+20. The `transform()` method of the CountVectorizer is called on the user inputted text to convert it into a numerical representation. 
+21. The `toarray()` method is called to convert the transformed data to a NumPy array.
+22. The `predict()` method of the SGDClassifier model is called on the transformed data to predict the product category.
+23. The predicted product category is printed to the console.
