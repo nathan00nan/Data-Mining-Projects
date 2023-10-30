@@ -1,0 +1,17 @@
+1. The code imports the necessary libraries - pandas, numpy, and the relevant modules from scikit-learn.
+2. The dataset is read using the pandas `read_csv()` function and stored in the variable `data`.
+3. The `Column 1` column is dropped from the dataset using the `drop()` method of pandas dataframe.
+4. The independent variables (`xs`) and the dependent variable (`y`) are separated from the dataset.
+5. A linear regression model (`linreg`) is initialized.
+6. The mean squared error (MSE) is calculated using cross-validation (`cross_val_score()`) for the linear regression model.
+7. The mean MSE is calculated using numpy's `mean()` function and printed.
+8. A ridge regression model (`ridge`) is initialized.
+9. A dictionary of parameters (`parameters`) for the ridge regression model is defined.
+10. Grid search cross-validation (`GridSearchCV()`) is performed to find the best parameters for the ridge regression model.
+11. The best parameters and best score (negative MSE) are printed.
+12. A lasso regression model (`lasso`) is initialized.
+13. A dictionary of parameters (`parameters`) for the lasso regression model is defined.
+14. Grid search cross-validation (`GridSearchCV()`) is performed to find the best parameters for the lasso regression model.
+15. The best parameters and best score (negative MSE) are printed.
+16. The first 5 rows of the dataset are printed using the `head()` method.
+17. The shape of the dataset is printed using the `shape` attribute.
